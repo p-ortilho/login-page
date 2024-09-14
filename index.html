@@ -7,22 +7,23 @@
     <title>Landing Page</title>
 </head>
 <body>
+    <script src="./javascript/script.js"></script>
     <main>
         <section class="conteudo">
             <div class="conteudo__container__imagem">
                 <h1 class="conteudo__container__imagem__titulo">Faça login<br>para entrar em nosso time</h1>
                 <img src="./assets/Cat astronaut-pana.svg" alt="">
             </div>
-            <div class="container__formulario">
+            <form class="container__formulario">
                 <h1 class="formulario__titulo">Login</h1>
                 <div class="container__input">
-                    <label for="">E-mail</label>
-                    <input type="email" placeholder="Email">
-                    <label for="">Senha</label>
-                    <input type="password" placeholder="Senha">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Email" id="email">
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Senha" id="senha">
                 </div>
-                <button class="formulario__botao" type="submit">Login</button>
-            </div>
+                <button class="formulario__botao" type="submit" onclick="mensagem()">Login</button>
+            </form>
         </section>
     </main>
 </body>
